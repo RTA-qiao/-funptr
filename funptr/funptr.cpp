@@ -1,6 +1,10 @@
 /*  学习函数指针
 	学习回调函数
-
+	函数指针是一个变量，代表的是一个函数的地址
+	函数指针的类型应该和指向的函数的类型一致
+	自定义的一个函数的参数是一个函数指针
+	将一个函数指针初始化为一个同类型的函数，
+	在通过自定义的函数将函数指针传递给形参，达到调用函数的目的
 */
 #include <iostream>
 #include <string>
@@ -104,7 +108,7 @@ void show(void (*fp)(char*), char* str) {
 	puts(str);
 }
 
-/* 输出菜单，得到选择 并返回*/
+/* 输出菜单，得到选择 并返回 */
 char show_meun() {
 	char ans;
 	puts("enter menu chios:");
